@@ -58,4 +58,6 @@ void SceneManager::Render()
 
 void SceneManager::Relase()
 {
+	delete SceneState;
+	SceneState = nullptr;
 }

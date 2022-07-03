@@ -6,7 +6,7 @@ class Scene
 {
 public:
 	Scene();
-	~Scene();
+	virtual ~Scene();
 
 // virtual : 가상함수, 자식함수에서 이 함수를 변형시켜서 사용가능
 public:

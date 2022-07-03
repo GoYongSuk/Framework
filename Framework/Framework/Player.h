@@ -1,14 +1,13 @@
 #pragma once
-#include "Scene.h"
+#include "Object.h"
 
-class Menu : public Scene
+class Player : public Object
 {
 public:
-	Menu();
-	virtual ~Menu();
-
-	// override: 가상함수를 덮어씌우겠다는 의미
-	// override, 오버로드(연산자가 존재하지 않음): 똑같은 함수 이름을 사용할 수 있다.
+	// 생성자, 소멸자
+	Player();
+	Player(Transform _info);
+	virtual ~Player();
 
 public:
 	// 한번만 실행, 필요할 때 초기화하는 함수
@@ -24,6 +23,4 @@ public:
 	virtual void Relase()override;
 
 };
-
-
 

@@ -5,7 +5,7 @@ class Logo : public Scene
 {
 public:
 	Logo();
-	~Logo();
+	virtual ~Logo();
 
 // override: 가상함수를 덮어씌우겠다는 의미
 // override, 오버로드(연산자가 존재하지 않음): 똑같은 함수 이름을 사용할 수 있다.

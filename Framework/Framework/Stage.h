@@ -1,11 +1,12 @@
 #pragma once
 #include "Scene.h"
 
+class Object;
 class Stage : public Scene
 {
 public:
 	Stage();
-	~Stage();
+	virtual ~Stage();
 
 	// override: 가상함수를 덮어씌우겠다는 의미
 	// override, 오버로드(연산자가 존재하지 않음): 똑같은 함수 이름을 사용할 수 있다.
@@ -23,6 +24,8 @@ public:
 	// 데이터를 지우는 함수
 	virtual void Relase()override;
 
+private:
+	Object* pPlayer;
 };
 
 

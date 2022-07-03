@@ -35,6 +35,7 @@ public:
 	~SceneManager();
 
 private:
+	// 데이터 변조 방지
 	// 주소값을 받아올 준비 상태
 	Scene* SceneState;
 
